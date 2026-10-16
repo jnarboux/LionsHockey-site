@@ -26,3 +26,7 @@ ul { padding-left: 20px; }
 li { margin: 4px 0; }
 .muted { color: var(--muted); font-size: 15px; }
 footer { color: var(--muted); font-size: 14px; margin-top: 32px; text-align: center; }
+.shots { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 8px; }
+.shots img { width: calc(33.333% - 7px); max-width: 220px; height: auto; border-radius: 14px; border: 1px solid var(--border); }
+.shots img.wide { width: 100%; max-width: 460px; }
+@media (max-width: 480px) { .shots img { width: calc(50% - 5px); } }
