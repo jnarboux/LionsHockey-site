@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ios" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="4.2" width="4" height="1.6" rx=".8" fill="currentColor"/></symbol>
+  <symbol id="i-android" viewBox="0 0 24 24"><path d="M3.5 18a8.5 8.5 0 0 1 17 0z" fill="currentColor"/><path d="M7 7.5 5.4 5M17 7.5l1.6-2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8.6" cy="14.2" r="1.1" fill="var(--card)"/><circle cx="15.4" cy="14.2" r="1.1" fill="var(--card)"/></symbol>
+</svg>
 <main>
   <header>
     <img src="icone.png" alt="">
@@ -28,30 +32,70 @@
   <section>
     <h2>Ce que fait l'app</h2>
     <ul>
-      <li><strong>Capture vidéos matchs</strong> : sons d'orgue à un toucher, score, et clips vidéo des dernières secondes avec l'orgue mixé.</li>
-      <li><strong>Capture vidéos d'entraînement</strong> : clips à la demande, en grand en paysage.</li>
-      <li><strong>Championnat</strong> : calendrier, résultats et classement, lus en direct sur Rolskanet.</li>
+      <li><strong>Capture vidéos matchs</strong> : sons d'orgue à un toucher, score, et clips vidéo des dernières secondes avec l'orgue mixé, au ralenti si on veut.</li>
+      <li><strong>Capture vidéos d'entraînement</strong> : clips à la demande.</li>
+      <li><strong>Vidéos à publier</strong> : les clips rangés par séance, à partager sur WhatsApp ou Google Drive.</li>
+      <li><strong>Miroir</strong> : se revoir avec quelques secondes de décalage.</li>
+      <li><strong>Analyse des vidéos</strong> (iPhone) : posture, détection des tirs, vitesse du palet.</li>
+      <li><strong>Championnat</strong> : calendrier, résultats, classement, stats des Lions et des adversaires, lus sur Rolskanet.</li>
       <li><strong>Minuterie</strong> : temps de jeu et de repos avec buzzer.</li>
-      <li><strong>Miroir</strong> : se revoir avec quelques secondes de décalage, avec le squelette du joueur et ses mesures.</li>
-      <li><strong>Analyse des vidéos</strong> : posture, détection des tirs, vitesse du palet (au ralenti).</li>
-      <li><strong>Bibliothèque d'exercices</strong> : schémas animés sur une patinoire.</li>
-      <li><strong>Le Coin de Xav</strong> : vidéos techniques partagées depuis YouTube ou Instagram, rangées par catégorie.</li>
+      <li><strong>Bibliothèque d'exercices</strong> : schémas animés sur une patinoire, séances en PDF.</li>
+      <li><strong>Le Coin de Xav</strong> : vidéos techniques rangées par catégorie.</li>
       <li><strong>Règles et quiz</strong> : gestes de l'arbitre, pénalités, déroulement du match (règlement FFRS).</li>
-      <li><strong>Équipe, clés et maillots de prêt</strong> : partagés entre les membres par iCloud.</li>
+      <li><strong>Équipe, clés et maillots de prêt</strong> : partagés entre les membres.</li>
     </ul>
     <p><a href="fonctionnalites.html">Voir toutes les fonctionnalités en images →</a></p>
   </section>
 
   <section>
-    <h2>Sur Android aussi</h2>
-    <p>Une version Android reprend le <strong>Championnat</strong> (calendrier, résultats, classement,
-      statistiques des Lions et des gardiens, joueurs adverses classés par danger, partage en image,
-      notification des résultats le dimanche soir), les <strong>règles et quiz d'arbitrage</strong>,
-      <strong>le Coin de Xav</strong>, la <strong>capture vidéo</strong> avec les sons d'orgue, le <strong>miroir</strong>,
-      les <strong>exercices</strong> et la <strong>minuterie</strong>.</p>
-    <p><a href="android.html">Télécharger la version Android →</a></p>
-    <p class="muted">L'app est faite pour l'équipe des Lions. Elle n'est pas affiliée à la Fédération Française de Roller et Skateboard.</p>
+    <h2>Télécharger</h2>
+    <div class="platforms">
+      <div>
+        <h3><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></h3>
+        <p>L'app iPhone est distribuée par <strong>TestFlight</strong>, l'outil de test d'Apple. Le lien d'invitation
+          a été envoyé en privé aux membres de l'équipe. Vous ne l'avez pas reçu ?
+          <a href="mailto:julien@narboux.fr?subject=LionsHockey%20iPhone">Demandez-le</a>.</p>
+        <p class="muted">iOS 17 ou plus récent.</p>
+      </div>
+      <div>
+        <h3><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h3>
+        <p><a class="download" href="LionsHockey.apk" download>Télécharger LionsHockey 1.3</a></p>
+        <p class="muted">Android 8 ou plus récent. <a href="android.html">Installation pas à pas →</a></p>
+      </div>
+    </div>
   </section>
+
+  <section>
+    <h2>Ce qui est disponible sur chaque version</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Fonction</th><th class="c"><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></th><th class="c"><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></th></tr></thead>
+        <tbody>
+          <tr><td>Capture de match : sons d'orgue, score, clips</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Choix du buteur et des assists</td><td class="c yes">✓</td><td class="c no">—</td></tr>
+          <tr><td>Ralenti</td><td class="c yes">✓<small>120 / 240 i/s</small></td><td class="c yes">✓<small>selon le téléphone</small></td></tr>
+          <tr><td>Zoom en pinçant l'image</td><td class="c yes">✓</td><td class="c no">—</td></tr>
+          <tr><td>Capture d'entraînement</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Vidéos à publier (revoir, partager)</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Miroir différé</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Analyse du mouvement : squelette, tirs, vitesse du palet</td><td class="c yes">✓</td><td class="c no">—</td></tr>
+          <tr><td>Championnat : calendrier, classement, stats</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Joueurs adverses classés par danger</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Partage des stats en image</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Notification des résultats le dimanche soir</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Minuterie d'entraînement</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Exercices, animation, séances en PDF</td><td class="c yes">✓</td><td class="c yes">✓<small>gardés sur le téléphone</small></td></tr>
+          <tr><td>Le Coin de Xav</td><td class="c yes">✓</td><td class="c">◐<small>lecture seule</small></td></tr>
+          <tr><td>Règles et quiz d'arbitrage</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Classement des quiz</td><td class="c yes">✓</td><td class="c">◐<small>lecture seule</small></td></tr>
+          <tr><td>Équipe, clés et maillots</td><td class="c yes">✓</td><td class="c">◐<small>lecture seule</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">◐ lecture seule : sur Android, on consulte ; les ajouts et modifications se font depuis l'app iPhone
+      (il faut un compte Apple).</p>
+  </section>
+  <p class="muted">L'app est faite pour l'équipe des Lions. Elle n'est pas affiliée à la Fédération Française de Roller et Skateboard.</p>
 </main>
 <footer>LionsHockey · Julien Narboux · <a href="mailto:julien@narboux.fr">julien@narboux.fr</a></footer>
 </body>

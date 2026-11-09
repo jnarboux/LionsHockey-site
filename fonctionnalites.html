@@ -4,17 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LionsHockey Fonctionnalités</title>
-<meta name="description" content="Toutes les fonctionnalités de l'app LionsHockey, en images.">
+<meta name="description" content="Toutes les fonctionnalités de l'app LionsHockey, sur iPhone et Android, en images.">
 <link rel="icon" href="icone.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ios" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="4.2" width="4" height="1.6" rx=".8" fill="currentColor"/></symbol>
+  <symbol id="i-android" viewBox="0 0 24 24"><path d="M3.5 18a8.5 8.5 0 0 1 17 0z" fill="currentColor"/><path d="M7 7.5 5.4 5M17 7.5l1.6-2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8.6" cy="14.2" r="1.1" fill="var(--card)"/><circle cx="15.4" cy="14.2" r="1.1" fill="var(--card)"/></symbol>
+</svg>
 <main>
   <header>
     <img src="icone.png" alt="">
     <div>
       <h1>Fonctionnalités</h1>
-      <p>LionsHockey en images (données fictives)</p>
+      <p>LionsHockey en images, sur iPhone et Android</p>
     </div>
   </header>
   <nav>
@@ -26,144 +30,185 @@
   </nav>
 
   <section>
-    <h2>Menu</h2>
-    <p>Au lancement, le lion du club laisse place au menu. Chaque fonction a sa tuile ; la pastille
-      « Aujourd'hui » suggère la capture d'entraînement en semaine et celle de match le week-end. Chaque
-      écran a ses propres réglages.</p>
+    <h2>iPhone ou Android ?</h2>
+    <p>Les deux versions partagent l'essentiel. L'app iPhone reste la plus complète (analyse vidéo, choix du buteur,
+      gestion de l'équipe) ; la version Android reprend tout le reste.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Fonction</th><th class="c"><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></th><th class="c"><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></th></tr></thead>
+        <tbody>
+          <tr><td>Capture de match : sons d'orgue, score, clips</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Choix du buteur et des assists</td><td class="c yes">✓</td><td class="c no">—</td></tr>
+          <tr><td>Ralenti</td><td class="c yes">✓<small>120 / 240 i/s</small></td><td class="c yes">✓<small>selon le téléphone</small></td></tr>
+          <tr><td>Zoom en pinçant l'image</td><td class="c yes">✓</td><td class="c no">—</td></tr>
+          <tr><td>Capture d'entraînement</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Vidéos à publier (revoir, partager)</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Miroir différé</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Analyse du mouvement : squelette, tirs, vitesse du palet</td><td class="c yes">✓</td><td class="c no">—</td></tr>
+          <tr><td>Championnat : calendrier, classement, stats</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Joueurs adverses classés par danger</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Partage des stats en image</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Notification des résultats le dimanche soir</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Minuterie d'entraînement</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Exercices, animation, séances en PDF</td><td class="c yes">✓</td><td class="c yes">✓<small>gardés sur le téléphone</small></td></tr>
+          <tr><td>Le Coin de Xav</td><td class="c yes">✓</td><td class="c">◐<small>lecture seule</small></td></tr>
+          <tr><td>Règles et quiz d'arbitrage</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+          <tr><td>Classement des quiz</td><td class="c yes">✓</td><td class="c">◐<small>lecture seule</small></td></tr>
+          <tr><td>Équipe, clés et maillots</td><td class="c yes">✓</td><td class="c">◐<small>lecture seule</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">◐ lecture seule : sur Android, on consulte ; les ajouts et modifications se font depuis l'app iPhone
+      (il faut un compte Apple).</p>
+  </section>
+  <section>
+    <h2>Menu <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>Une tuile par fonction, aux couleurs du club. Sur iPhone, le lion du club laisse place au menu au lancement,
+      et la pastille « Aujourd'hui » suggère la capture d'entraînement en semaine et celle de match le week-end.</p>
     <div class="shots">
-      <img src="captures/00-demarrage.jpg" alt="Écran de démarrage" loading="lazy">
-      <img src="captures/01-accueil.jpg" alt="Menu d'accueil" loading="lazy">
+      <figure><img src="captures/iphone/00-demarrage.jpg" alt="Écran de démarrage (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/01-accueil.jpg" alt="Menu d'accueil (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/accueil.jpg" alt="Menu d'accueil (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Capture vidéos matchs</h2>
+    <h2>Capture vidéos matchs <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
     <ul>
       <li><strong>Six sons d'orgue</strong> à un toucher : but des Lions, but encaissé, Let's Go Lions, montée,
         défense, pénalité.</li>
-      <li><strong>Le score</strong> s'affiche en haut et suit les buts ; un toucher permet de le corriger.</li>
+      <li><strong>Le score</strong> suit les buts ; un toucher permet de le corriger.</li>
       <li><strong>Filmer</strong> : la caméra garde en permanence les dernières secondes (20 s par défaut) ;
-        chaque son joué ajoute ces secondes à la file des vidéos, avec l'orgue mixé à la fin. Un appel entrant
-        n'interrompt pas la vidéo.</li>
-      <li><strong>Zoom</strong> en pinçant l'image, <strong>ralenti</strong> à 120 ou 240 images par seconde.</li>
-      <li>Après un but des Lions, on choisit le <strong>buteur et deux assists</strong>.</li>
-      <li><strong>Réglages du match</strong> : championnat CLRH ou Loisir, adversaire, domicile ou extérieur,
-        durée des clips.</li>
+        chaque son joué en fait un clip, avec l'orgue mixé à la fin.</li>
+      <li><strong>Ralenti</strong> : à 120 ou 240 images par seconde, les secondes de jeu sont ralenties 4 fois
+        (sur Android, si le téléphone le permet).</li>
+      <li>Sur iPhone : <strong>zoom</strong> en pinçant l'image, <strong>buteur et deux assists</strong> après un but,
+        réglages du match (championnat, adversaire, domicile ou extérieur).</li>
     </ul>
     <div class="shots">
-      <img src="captures/02-match.jpg" alt="Écran de match" loading="lazy">
-      <img src="captures/03-score.jpg" alt="Correction du score" loading="lazy">
-      <img src="captures/04-buteur.jpg" alt="Choix du buteur et des assists" loading="lazy">
-      <img src="captures/07-reglages.jpg" alt="Réglages du match" loading="lazy">
+      <figure><img src="captures/iphone/02-match.jpg" alt="Écran de match (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/03-score.jpg" alt="Correction du score (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/04-buteur.jpg" alt="Choix du buteur et des assists (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/07-reglages.jpg" alt="Réglages du match (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/match.jpg" alt="Écran de match (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Capture vidéos d'entraînement</h2>
-    <p>La caméra et un seul bouton pour créer un clip des dernières secondes ; le temps restant de la
-      minuterie s'affiche si elle tourne.</p>
+    <h2>Capture vidéos d'entraînement <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>La caméra et un seul bouton pour créer un clip des dernières secondes. On peut tourner le téléphone comme on
+      veut : le clip est enregistré dans le bon sens. Sur iPhone, l'écran passe en grand en paysage et le temps
+      restant de la minuterie s'affiche.</p>
     <div class="shots">
-      <img src="captures/05-entrainement.jpg" alt="Capture d'entraînement" loading="lazy">
+      <figure><img src="captures/iphone/05-entrainement.jpg" alt="Capture d'entraînement (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/entrainement.jpg" alt="Capture d'entraînement (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+      <figure class="wide"><img src="captures/iphone/18-paysage-match.jpg" alt="Capture de match en paysage (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure class="wide"><img src="captures/iphone/19-paysage-entrainement.jpg" alt="Capture d'entraînement en paysage (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Championnat</h2>
-    <p>Le calendrier, les résultats et le classement de l'équipe, lus en direct sur Rolskanet, le site de
-      résultats de la fédération. Le prochain match en grand, avec l'itinéraire jusqu'au gymnase et un
-      bouton qui prépare la capture de match (adversaire, lieu, score à 0) ; le classement de la poule, avec
-      notre équipe en évidence.</p>
+    <h2>Vidéos à publier <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>Les clips rangés par séance (entraînement ou match du jour) : on les revoit, on les partage un par un ou
+      toute la séance d'un coup (WhatsApp, Google Drive…), on les enregistre dans la galerie. Sur iPhone, chaque
+      clip se corrige (but, tir, buteur, assists, score) et son titre suit les corrections.</p>
     <div class="shots">
-      <img src="captures/22-championnat.jpg" alt="Calendrier du championnat" loading="lazy">
-      <img src="captures/23-classement.jpg" alt="Classement de la poule" loading="lazy">
+      <figure><img src="captures/iphone/09-clips.jpg" alt="File des vidéos à publier (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/10-clip.jpg" alt="Correction d'un clip (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/clips.jpg" alt="Vidéos à publier (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>En paysage</h2>
-    <p>Toute l'app tourne avec le téléphone. Pendant la capture, la vidéo prend presque tout l'écran :
-      sons compacts et score à droite pour le match, bouton Clip posé sur la vidéo pour l'entraînement.</p>
+    <h2>Miroir <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>Le téléphone sur un pied au bord de la piste : l'écran montre ce qui a été filmé quelques secondes plus tôt
+      (de 1 à 30 s), pour se revoir sans toucher au téléphone.</p>
     <div class="shots">
-      <img class="wide" src="captures/18-paysage-match.jpg" alt="Capture de match en paysage" loading="lazy">
-      <img class="wide" src="captures/19-paysage-entrainement.jpg" alt="Capture d'entraînement en paysage" loading="lazy">
+      <figure><img src="captures/android/miroir.jpg" alt="Miroir différé (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Minuterie</h2>
+    <h2>Analyse du mouvement <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></h2>
+    <ul>
+      <li><strong>Squelette et mesures</strong> : angle des genoux (en vert dans la bonne position de hockey),
+        hanche, buste, écart des patins, vitesse estimée.</li>
+      <li><strong>Tirs</strong> : une bulle « Tir ! » au bon moment, détectée au son et au geste des mains.</li>
+      <li><strong>Palet</strong> : sur une vidéo au ralenti, le palet est entouré et sa vitesse s'affiche.</li>
+    </ul>
+    <p class="muted">Tout se calcule sur l'iPhone, sans réseau.</p>
+
+  </section>
+  <section>
+    <h2>Championnat <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <ul>
+      <li><strong>Matchs</strong> : le prochain match en grand, avec l'itinéraire jusqu'au gymnase ; les matchs à venir
+        et les résultats, lus en direct sur Rolskanet, le site de résultats de la fédération.</li>
+      <li><strong>Classement</strong> de chaque poule, avec les victoires et défaites après prolongation.</li>
+      <li><strong>Stats des Lions</strong> : buts, passes et points de chaque joueur, buts encaissés des gardiens,
+        détail match par match, partage en image.</li>
+      <li><strong>Adversaires</strong> : âge médian et répartition des âges, gardiens, joueurs classés du plus
+        dangereux au moins dangereux avec leurs stats de la saison et de la précédente.</li>
+      <li><strong>Notification</strong> le dimanche à 20 h après un week-end de championnat.</li>
+    </ul>
+    <div class="shots">
+      <figure><img src="captures/iphone/22-championnat.jpg" alt="Calendrier du championnat (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/23-classement.jpg" alt="Classement de la poule (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/championnat.jpg" alt="Calendrier du championnat (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+      <figure><img src="captures/android/classement.jpg" alt="Classement des poules (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+      <figure><img src="captures/android/adversaire.jpg" alt="Joueurs d'une équipe adverse (noms floutés) (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+    </div>
+  </section>
+  <section>
+    <h2>Minuterie <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
     <p>Elle alterne temps de jeu (vert) et de repos (bleu) jusqu'à une heure limite, avec un buzzer à chaque
       changement. Elle continue de tourner et de sonner quand on passe à un autre écran.</p>
     <div class="shots">
-      <img src="captures/06-minuterie.jpg" alt="Minuterie" loading="lazy">
+      <figure><img src="captures/iphone/06-minuterie.jpg" alt="Minuterie (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/minuterie.jpg" alt="Minuterie (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Miroir et analyse du mouvement</h2>
-    <ul>
-      <li><strong>Miroir</strong> : l'écran montre ce qui a été filmé quelques secondes plus tôt (délai de 1 à
-        30 s), pour se revoir sans toucher au téléphone.</li>
-      <li><strong>Squelette et mesures</strong> : angle des genoux (en vert dans la bonne position de hockey),
-        hanche, buste, écart des patins, vitesse estimée.</li>
-      <li><strong>Tirs</strong> : une bulle « Tir ! » au bon moment, détectée au son et au geste des mains,
-        avec la posture et la vitesse des mains au tir.</li>
-      <li><strong>Palet</strong> : sur une vidéo au ralenti, le palet est entouré en vert et sa vitesse
-        s'affiche.</li>
-    </ul>
-    <p class="muted">Tout se calcule sur l'iPhone, sans réseau.</p>
-  </section>
-
-  <section>
-    <h2>Vidéos à publier</h2>
-    <p>La file des clips : chaque clip se regarde, se corrige (but, tir, buteur, assists, score) et se
-      partage ; son titre suit les corrections. On peut en sélectionner plusieurs pour les partager, les
-      supprimer ou les enregistrer dans Photos.</p>
-    <div class="shots">
-      <img src="captures/09-clips.jpg" alt="File des vidéos à publier" loading="lazy">
-      <img src="captures/10-clip.jpg" alt="Correction d'un clip" loading="lazy">
-    </div>
-  </section>
-
-  <section>
-    <h2>Bibliothèque d'exercices</h2>
+    <h2>Bibliothèque d'exercices <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
     <p>Un éditeur de schémas sur une patinoire, avec les conventions habituelles (patin avant et arrière,
-      conduite du palet, passe, tir, joueurs, plots…). Les exercices se découpent en étapes et s'animent.</p>
+      conduite du palet, passe, tir, joueurs, plots…). Les exercices se découpent en étapes et s'animent ; on
+      compose une séance et on l'envoie en PDF avec les schémas.</p>
     <div class="shots">
-      <img src="captures/15-exercices.jpg" alt="Liste des exercices" loading="lazy">
-      <img src="captures/16-editeur.jpg" alt="Éditeur d'exercice" loading="lazy">
-      <img src="captures/17-animation.jpg" alt="Animation d'un exercice" loading="lazy">
+      <figure><img src="captures/iphone/15-exercices.jpg" alt="Liste des exercices (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/16-editeur.jpg" alt="Éditeur d'exercice (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/17-animation.jpg" alt="Animation d'un exercice (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/exercices.jpg" alt="Liste des exercices (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+      <figure><img src="captures/android/editeur.jpg" alt="Éditeur d'exercice (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+      <figure><img src="captures/android/animation.jpg" alt="Animation d'un exercice (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Le Coin de Xav : vidéos techniques</h2>
-    <p>Depuis YouTube, Instagram ou Safari, <em>Partager › LionsHockey</em> range une vidéo dans une
-      catégorie : types de tirs, patinage, palet, supériorité numérique… La bibliothèque est partagée avec
-      toute l'équipe.</p>
+    <h2>Le Coin de Xav : vidéos techniques <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>Les vidéos techniques de l'équipe, rangées par catégorie : types de tirs, patinage, palet, supériorité
+      numérique… Sur iPhone, <em>Partager › LionsHockey</em> depuis YouTube, Instagram ou Safari ajoute une vidéo ;
+      sur Android, on les consulte.</p>
     <div class="shots">
-      <img src="captures/21-coin-de-xav.jpg" alt="Le Coin de Xav" loading="lazy">
+      <figure><img src="captures/iphone/21-coin-de-xav.jpg" alt="Le Coin de Xav (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/xav.jpg" alt="Le Coin de Xav (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Règles et quiz</h2>
-    <p>Trois quiz de 10 questions (gestes de l'arbitre, pénalités, déroulement du match) d'après le
-      règlement de la fédération, les gestes de l'arbitre en fiches et le règlement complet avec recherche.</p>
+    <h2>Règles et quiz <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>Trois quiz de 10 questions (gestes de l'arbitre, pénalités, déroulement du match) d'après le règlement de la
+      fédération, les gestes de l'arbitre en fiches, le règlement complet et le classement de l'équipe.</p>
     <div class="shots">
-      <img src="captures/11-regles.jpg" alt="Règles et quiz" loading="lazy">
-      <img src="captures/12-quiz.jpg" alt="Question de quiz" loading="lazy">
+      <figure><img src="captures/iphone/11-regles.jpg" alt="Règles et quiz (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/12-quiz.jpg" alt="Question de quiz (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/android/regles.jpg" alt="Règles et quiz (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
+      <figure><img src="captures/android/quiz.jpg" alt="Question de quiz (Android)" loading="lazy"><figcaption><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></figcaption></figure>
     </div>
   </section>
-
   <section>
-    <h2>Équipe, clés et maillots</h2>
-    <p>La liste des joueurs et, pour les clés et maillots de prêt, qui a quoi et depuis quand. Partagé
-      entre les membres par iCloud.</p>
+    <h2>Équipe, clés et maillots <span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span><span class="tag android"><svg><use href="#i-android"/></svg>Android</span></h2>
+    <p>La liste des joueurs et, pour les clés et maillots de prêt, qui a quoi et depuis quand. Partagé entre les
+      membres par iCloud ; sur Android, en lecture seule.</p>
     <div class="shots">
-      <img src="captures/08-equipe.jpg" alt="Équipe" loading="lazy">
-      <img src="captures/20-cles-maillots.jpg" alt="Clés et maillots" loading="lazy">
+      <figure><img src="captures/iphone/08-equipe.jpg" alt="Équipe (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
+      <figure><img src="captures/iphone/20-cles-maillots.jpg" alt="Clés et maillots (iPhone)" loading="lazy"><figcaption><span class="tag ios"><svg><use href="#i-ios"/></svg>iPhone</span></figcaption></figure>
     </div>
   </section>
+  <p class="muted">Captures iPhone avec des données fictives ; captures Android faites dans l'émulateur
+    (d'où l'image de la caméra), noms des joueurs adverses floutés.</p>
 </main>
 <footer>LionsHockey · Julien Narboux · <a href="mailto:julien@narboux.fr">julien@narboux.fr</a></footer>
 </body>
