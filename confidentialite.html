@@ -98,7 +98,14 @@
         compositions et les images partagées ; le joueur peut retirer la sienne à tout moment, elle est alors
         supprimée d'iCloud.</li>
     </ul>
-    <p>Ces informations sont visibles par tous les utilisateurs de l'app. Pour modifier, l'app utilise
+    <p><strong>Informations réservées à l'équipe, chiffrées.</strong> Les postes, le fait d'avoir une voiture, le
+      point de domicile approximatif (placé sur une carte par le joueur, sans adresse) et les réponses au
+      covoiturage (voiture proposée, places, heure, point de rendez-vous, affectations) sont chiffrés sur le
+      téléphone (AES-256) avec une clé tirée du « code d'équipe » partagé entre les membres, avant d'être
+      envoyés dans iCloud. Sans ce code, ils sont illisibles, y compris pour une personne qui a l'app. Les
+      trajets et temps de transport sont calculés par les cartes d'Apple (iPhone) ou par OpenStreetMap et
+      OSRM (Android), à qui l'app envoie seulement les coordonnées de départ et d'arrivée.</p>
+    <p>Les autres informations sont visibles par tous les utilisateurs de l'app. Pour modifier, l'app utilise
       l'identifiant iCloud propre à l'app que fournit Apple : il ne nous donne ni votre nom, ni votre
       adresse e-mail, ni l'accès à vos autres données iCloud. La lecture ne demande pas de compte iCloud.</p>
     <p>Pour faire corriger ou retirer une information vous concernant, écrivez à
