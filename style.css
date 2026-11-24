@@ -66,3 +66,12 @@ code { font-size: 12px; word-break: break-all; }
 ol { padding-left: 22px; }
 
 h2.category { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted, #8a8f98); margin: 28px 4px 10px; }
+
+/* Tuiles de la présentation, comme le menu de l'app */
+h3.cat { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin: 20px 0 8px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+.tile { border-radius: 16px; padding: 12px 14px 14px; color: #fff; display: flex; flex-direction: column; gap: 4px; min-height: 120px;
+        box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+.tile .ic { font-size: 26px; line-height: 1; }
+.tile strong { font-size: 17px; line-height: 1.2; margin-top: 6px; }
+.tile span:last-child { font-size: 13px; line-height: 1.35; opacity: .92; }
