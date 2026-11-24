@@ -64,3 +64,5 @@ td small { color: var(--muted); display: block; font-size: 12px; line-height: 1.
 .platforms h3 { display: flex; align-items: center; gap: 8px; }
 code { font-size: 12px; word-break: break-all; }
 ol { padding-left: 22px; }
+
+h2.category { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted, #8a8f98); margin: 28px 4px 10px; }
